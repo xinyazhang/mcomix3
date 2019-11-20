@@ -1,4 +1,5 @@
-User under win32 should use `original mcomix`_.
+The support for Windows has been added but not tested extensively.
+Windows users should consider the `original mcomix`_ if it just works.
 
 =======
 MComix3
@@ -26,6 +27,12 @@ Run:
 ----
 ``python3 mcomix/mcomixstarter.py <diretory, archive or image>``
 
+Run (Windows x86-64):
+----
+- Install **msys2** `10`_
+- Within msys2, run ``pacman -S mingw-w64-x86_64-gtk3 mingw-w64-x86_64-python3 mingw-w64-x86_64-python3-gobject mingw64/mingw-w64-x86_64-python3-pillow``
+- ``/mingw64/bin/python3 mcomix/mcomixstarter.py <diretory, archive or image>``
+
 Install:
 --------
 **setup.py is not working**
@@ -47,3 +54,4 @@ then:
 .. _7: https://fragglet.github.io/lhasa/
 .. _8: https://mupdf.com/
 .. _9: https://github.com/FLIF-hub/FLIF
+.. _10: https://www.msys2.org/
